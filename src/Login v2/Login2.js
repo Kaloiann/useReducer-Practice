@@ -24,12 +24,12 @@ const Reducer = (state, action) => {
             error: validation ? false : 'Username and password must have more than 6 initials',
             LoggedIn: false
         }
-        case 'loginError':
-        return {
-            ...state,
-            error: 'Incorrect username or password',
-            isValid: false,
-        }
+        // case 'loginError':
+        // return {
+        //     ...state,
+        //     error: 'Incorrect username or password',
+        //     isValid: false,
+        // }
         case 'success':
         return {
             ...state,
